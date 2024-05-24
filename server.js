@@ -55,6 +55,10 @@ app.get('/products', function(req, res) {
     res.render('smartcomposeproductpage');
  });
 
+ app.get('/readliaoproductpage', function(req, res) {
+   res.render('readliaoproductpage');
+});
+
  app.get('/submit', function(req, res) {
    res.render('submit');
 });
