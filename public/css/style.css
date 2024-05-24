@@ -63,6 +63,15 @@
   --bs-btn-hover-border-color: #694F00;
 }
 
+.btn-tertiary {
+  background-color: #694F00;
+  border-color: #694F00;
+  font-weight: 500;
+  color: #fff;
+  --bs-btn-hover-color: #694F00;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #694F00;
+}
 
 .header-background {
   background-color: #FFF9C7;
@@ -102,13 +111,13 @@
 }
 
 .form-control {
-  max-width: 1200px;
+  max-width: 1500px;
   text-align: center;
   font-weight: bold;
   display: block;
   width: 100%;
   padding: .475rem .75rem;
-  font-style:normal;
+  font-style: normal;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -123,15 +132,40 @@
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.form-fields {
+  max-width: 1500px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  padding: .475rem .75rem;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-width: 1px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
 .search-bar {
   margin-bottom: 30px;
+  border width: 50px;
 }
 
 .input-group .form-control {
   border-right: 0;
+  border-left: 0;
 }
 .input-group-append .input-group-text {
-  background: white;
+  background: #694F00;
+  border-right: 0;
   border-left: 0;
 }
 
@@ -139,7 +173,8 @@
 .input-group-append .input-group-text svg {
   width: 1.5em;
   height: 1.5em;
-  fill: currentColor;
+  fill: #FFF9C7;
+  border-color: #FFF9C7;
 }
 
 .input-group-append {

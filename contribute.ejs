@@ -62,14 +62,14 @@
       <div class="row g-3">
         <div class="col-sm-12 col-xs-12 mt-3">
           <label for="firstName" class="form-label">Product Name:</label>
-          <input type="text" class="form-control" id="firstName" name="productName" placeholder="" value="" required="">
+          <input type="text" class="form-control form-fields" id="firstName" name="productName" placeholder="" value="" required="">
           <div class="invalid-feedback">
             Valid product name is required.
   </div>
 
         <div class="col-sm-12 mt-3">
           <label for="productDescription" class="form-label">Product Description:</label>
-          <input type="text" class="form-control" id="productDescription" name="productDescription" placeholder="" value="" required="">
+          <input type="text" class="form-control form-fields" id="productDescription" name="productDescription" placeholder="" value="" required="">
           <div class="invalid-feedback">
             Valid description is required.
           </div>
@@ -80,7 +80,7 @@
 
         <div class="col-12 mt-3">
           <label for="email" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="email" name="emailAddress" placeholder="you@gov.com">
+          <input type="email" class="form-control form-fields" id="email" name="emailAddress">
           <div class="invalid-feedback">
             Please enter a valid email address.
           </div>
@@ -88,23 +88,22 @@
 
         <div class="col-12 mt-3">
           <label for="phoneNumber" class="form-label">Phone Number <span class="text-body-secondary">(Optional)</span></label>
-          <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="+65 91234567">
+          <input type="text" class="form-control form-fields" id="phoneNumber" name="phoneNumber">
           <div class="invalid-feedback">
             Please enter a valid phone number.
           </div>
         </div>
 
 
-      <hr class="my-4">
+      <hr class="my-5" />
 
-      <div class="form-check">
+      <div class="form-check mb-5">
         <input type="checkbox" class="form-check-input" id="PDPA" name="PDPA">
-        <label class="form-check-label" for="PDPA">PDPA</label>
+        <label class="form-check-label form-fields" for="PDPA">PDPA</label>
       </div>
 
-      <hr class="my-4">
 
-      <button class="w-100 btn btn-primary btn-lg" type="submit" onclick="">Submit</button>
+      <button class="w-100 btn btn-tertiary btn-lg" type="submit" onclick="">Submit</button>
 
     </form>
   </div>
