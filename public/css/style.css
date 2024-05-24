@@ -127,3 +127,21 @@
   margin-bottom: 30px;
 }
 
+.input-group .form-control {
+  border-right: 0;
+}
+.input-group-append .input-group-text {
+  background: white;
+  border-left: 0;
+}
+
+
+.input-group-append .input-group-text svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+}
+
+.input-group-append {
+  display: flex;
+}
