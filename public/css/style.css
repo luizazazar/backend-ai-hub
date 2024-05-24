@@ -102,12 +102,13 @@
 }
 
 .form-control {
-  max-width: 900px;
-  text-align: left;
+  max-width: 1200px;
+  text-align: center;
+  font-weight: bold;
   display: block;
   width: 100%;
-  padding: .375rem .75rem;
-  font-style:italic;
+  padding: .475rem .75rem;
+  font-style:normal;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
