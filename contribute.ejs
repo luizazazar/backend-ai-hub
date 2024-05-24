@@ -50,60 +50,61 @@
 
 
  <div class="container marketing my-4 text-center">
-  <div class="col-md-12">
-    <h3 class="featurette-heading fw-normal lh-1">Share your AI tools to the minions</h3>
-    <p class="lead">Please fill in some details below:</p>
+  <div class="col-md-12 my-3">
+    <h3 class="featurette-heading fw-normal lh-1 pb-3">Please fill in the form below to add your product to our Hub.</h3>
+    <!-- <p class="lead">Please fill in the form below to add your product to our Hub.</p>-->
   </div>
-
-  <br />
   
-  <h5>Tell us a little on your AI product</h5>
+  <h5>Product Details</h5>
 
   <div class="container col-xs-12 col-sm-6 col-md-12 text-center">
-    <form class="needs-validation" novalidate="">
+    <form class="needs-validation" novalidate="" action="/submit" method="post">
       <div class="row g-3">
-        <div class="col-sm-12 col-xs-12 my-5">
-          <label for="firstName" class="form-label">Product Name</label>
-          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+        <div class="col-sm-12 col-xs-12 mt-3">
+          <label for="firstName" class="form-label">Product Name:</label>
+          <input type="text" class="form-control" id="firstName" name="productName" placeholder="" value="" required="">
           <div class="invalid-feedback">
-            Valid first name is required.
+            Valid product name is required.
   </div>
 
         <div class="col-sm-12 mt-3">
-          <label for="lastName" class="form-label">Share some details about your product!</label>
-          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+          <label for="productDescription" class="form-label">Product Description:</label>
+          <input type="text" class="form-control" id="productDescription" name="productDescription" placeholder="" value="" required="">
           <div class="invalid-feedback">
-            Valid last name is required.
+            Valid description is required.
           </div>
         </div>
 
 <br />
-      <h5>How can we reach out to you?</h5>
+      <h5>Contact Details</h5>
 
-        <div class="col-12 mt-4">
+        <div class="col-12 mt-3">
           <label for="email" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="email" placeholder="you@gov.com">
+          <input type="email" class="form-control" id="email" name="emailAddress" placeholder="you@gov.com">
           <div class="invalid-feedback">
             Please enter a valid email address.
           </div>
         </div>
 
         <div class="col-12 mt-3">
-          <label for="address2" class="form-label">Phone Number <span class="text-body-secondary">(Optional)</span></label>
-          <input type="text" class="form-control" id="address2" placeholder="+65 91234567">
+          <label for="phoneNumber" class="form-label">Phone Number <span class="text-body-secondary">(Optional)</span></label>
+          <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="+65 91234567">
+          <div class="invalid-feedback">
+            Please enter a valid phone number.
+          </div>
         </div>
 
 
       <hr class="my-4">
 
       <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="same-address">
-        <label class="form-check-label" for="same-address">PDPA</label>
+        <input type="checkbox" class="form-check-input" id="PDPA">
+        <label class="form-check-label" for="PDPA">PDPA</label>
       </div>
 
       <hr class="my-4">
 
-      <button class="w-100 btn btn-primary btn-lg" type="submit" onclick="alert('Thank you! We will contact you within five working days.')">Submit</button>
+      <button class="w-100 btn btn-primary btn-lg" type="submit" onclick="">Submit</button>
 
     </form>
   </div>

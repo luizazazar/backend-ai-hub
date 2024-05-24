@@ -18,6 +18,10 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.json());      
 app.use(express.urlencoded({extended: true}));
 
+// Needed for Prisma to connect to database
+const { PrismaClient } = require('@prisma/client')
+const prisma = new PrismaClient();
+
 // root page
 app.get('/', function(req, res) {
    res.render('index');
@@ -50,6 +54,37 @@ app.get('/products', function(req, res) {
  app.get('/smartcomposeproductpage', function(req, res) {
     res.render('smartcomposeproductpage');
  });
+
+ app.get('/submit', function(req, res) {
+   res.render('submit');
+});
+
+ app.post('/submit', async function(req, res) {
+
+   // Try-Catch for any errors
+   try {
+
+      const { productName, productDescription, emailAddress, phoneNumber, PDPA } = req.body;
+      
+      // Reload page if empty title or content
+      if (!productName || !productDescription) {
+         console.log("Unable to create new form, no title or content");
+         res.render('contribute');
+      } else {
+            // Create post and store in database
+            const form = await prisma.post.create({
+               data: { productName, productDescription, emailAddress, phoneNumber, PDPA },
+            });
+
+            // Redirect back to the homepage
+            res.redirect('/submit');
+      }
+      } catch (error) {
+         console.log(error);
+         res.render('contribute');
+   }
+    
+});
 
 // Tells the app which port to run on
 app.listen(8080);
