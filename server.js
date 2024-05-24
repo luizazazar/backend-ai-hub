@@ -64,13 +64,9 @@ app.get('/products', function(req, res) {
    // Try-Catch for any errors
    try {
 
-      const { productName, productDescription, emailAddress, phoneNumber, PDPA } = req.body;
+      const { productName, productDescription, emailAddress, phoneNumber } = req.body;
 
-      if (typeof PDPA !== 'undefined') {
-         var isChecked = true 
-      } else {
-         var isChecked = false 
-      }
+      const isChecked = req.body.PDPA ? true : false;
       
       // Reload page if empty title or content
       if (!productName || !productDescription) {
