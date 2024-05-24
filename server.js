@@ -65,6 +65,12 @@ app.get('/products', function(req, res) {
    try {
 
       const { productName, productDescription, emailAddress, phoneNumber, PDPA } = req.body;
+
+      if (typeof PDPA !== 'undefined') {
+         var isChecked = true 
+      } else {
+         var isChecked = false 
+      }
       
       // Reload page if empty title or content
       if (!productName || !productDescription) {
@@ -72,8 +78,8 @@ app.get('/products', function(req, res) {
          res.render('contribute');
       } else {
             // Create post and store in database
-            const form = await prisma.post.create({
-               data: { productName, productDescription, emailAddress, phoneNumber, PDPA },
+            const form = await prisma.Form.create({
+               data: { productName, productDescription, emailAddress, phoneNumber, isChecked },
             });
 
             // Redirect back to the homepage

@@ -16,9 +16,9 @@ datasource db {
 // Post model represents individual blog posts
 model Form {
   id        Int       @id @default(autoincrement())
-  Product_Name     String
-  Product_Details  String
-  Email_Address    String
-  Phone_Number     String
-  PDPA             Boolean
+  productName     String
+  productDescription  String
+  emailAddress    String
+  phoneNumber     String
+  isChecked       Boolean
 }
