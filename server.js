@@ -63,6 +63,10 @@ app.get('/launchpadproductpage', function(req, res) {
    res.render('launchpadproductpage');
 });
 
+app.get('/transcribeproductpage', function(req, res) {
+   res.render('transcribeproductpage');
+});
+
  app.get('/submit', function(req, res) {
    res.render('submit');
 });
