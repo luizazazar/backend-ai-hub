@@ -1,14 +1,15 @@
 // In-memory list of items (variable)
 const items = [
-    { title: 'AIBots', description: "Build your chatbot in 15 minutes", link: "./aibotsproductpage", about: "ChatGPT is useful but it only contains internet data. When you can include a knowledge base (until Restricted or Sensitive-Normal), there are many more possibilities where you can leverage large language models to help improve your agency's work and productivity. AIBots is a platform allowing agencies to create AI Chatbots with pre-configured system prompts and an added knowledge base (.pdf, .docx, .txt files)." },
-    { title: 'Pair Chat', description: 'Fast and secure version of ChatGPT.', link: "./pairchatproductpage", about: "chatgpt-equivalent, ideation, brainstorming, language tranlation, coding, rewriting or editing text" },
-    { title: 'Transcribe', description: 'Record and summarise your meeting minutes.', link: "./transcribeproductpage" },
-    { title: 'LaunchPad', description: 'Share your ideas.' , link: "./launchpadproductpage" },
-    { title: 'ReadLiao', description: 'Simplify complicated letters for seniors.', link: "./readliaoproductpage" },
-    { title: 'SmartCompose', description: 'Draft customer service replies in 5 minutes.', link: "./smartcomposeproductpage" }
+    { title: 'AIBots', description: "Build your chatbot in 15 minutes", link: "./aibotsproductpage", about: "RAG, retrieval augmented generation, chatbots, design chatbot, knowledge management" },
+    { title: 'Pair Chat', description: 'Fast and secure version of ChatGPT.', link: "./pairchatproductpage", about: "chatgpt-equivalent, ideation, brainstorming, language translation, coding, rewriting or editing text, review text, spelling, grammar" },
+    { title: 'Transcribe', description: 'Record and summarise your meeting minutes.', link: "./transcribeproductpage", about: "diarisation, transcription, interviews, speech to text" },
+    { title: 'LaunchPad', description: 'Share your ideas.' , link: "./launchpadproductpage", about: "innovate, ideathon, hackathon" },
+    { title: 'ReadLiao', description: 'Simplify complicated letters for seniors.', link: "./readliaoproductpage", about: "translate, OCR, speech to text" },
+    { title: 'SmartCompose', description: 'Draft customer service replies in 5 minutes.', link: "./smartcomposeproductpage", about: "reply customer emails, data redaction, draft reply" }
     // Add more items as needed
 ];
 
+// higher threshold = return more results but may not be well-matched. lower threshold = more specific results. 
 const options = {
     keys: ['title', 'description', 'about'],
     threshold: 0.3,
