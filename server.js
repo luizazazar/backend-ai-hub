@@ -67,13 +67,15 @@ app.get('/transcribeproductpage', function(req, res) {
    res.render('transcribeproductpage');
 });
 
+// Submit page (thank you for submission)
  app.get('/submit', function(req, res) {
    res.render('submit');
 });
 
+// When the form is submitted, run this function below. API call. 
  app.post('/submit', async function(req, res) {
 
-   // Try-Catch for any errors
+   // Try-Catch for any errors (add the below info to the database).
    try {
 
       const { productName, productDescription, emailAddress, phoneNumber } = req.body;

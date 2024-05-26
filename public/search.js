@@ -9,20 +9,20 @@ const items = [
     // Add more items as needed
 ];
 
-// higher threshold = return more results but may not be well-matched. lower threshold = more specific results. 
+// higher threshold = return more results but may not be well-matched. lower threshold = more specific results/stricter matches. 
 const options = {
     keys: ['title', 'description', 'about'],
     threshold: 0.3,
     findAllMatches: true
 };
 
-// Initialize Fuse.js (create new object)
+// Initialize Fuse.js (create new object) Search library
 const fuse = new Fuse(items, options);
 
-// Reference to the cards container
+// Reference to the cards container (where the product cards will be displayed)
 const cardsContainer = document.getElementById('cardsContainer');
 
-// Function to render cards based on items
+// Function to render cards based on items. Defining function. 
 function renderCards(filteredItems) {
     cardsContainer.innerHTML = ''; // Clear previous cards
     filteredItems.forEach(item => {
@@ -34,7 +34,7 @@ function renderCards(filteredItems) {
     });
 }
 
-// Search input event listener
+// Search input event listener (product title and description details are returned here) 
 document.getElementById('searchInput').addEventListener('input', function() {
     const query = this.value;
     const result = fuse.search(query);
