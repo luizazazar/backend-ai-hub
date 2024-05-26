@@ -59,6 +59,10 @@ app.get('/products', function(req, res) {
    res.render('readliaoproductpage');
 });
 
+app.get('/launchpadproductpage', function(req, res) {
+   res.render('launchpadproductpage');
+});
+
  app.get('/submit', function(req, res) {
    res.render('submit');
 });
