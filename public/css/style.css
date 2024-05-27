@@ -122,7 +122,30 @@
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+
 .search-bar {
   margin-bottom: 30px;
+  border width: 50px;
 }
 
+.input-group .form-control {
+  border-right: 0;
+  border-left: 0;
+}
+.input-group-append .input-group-text {
+  background: #694F00;
+  border-right: 0;
+  border-left: 0;
+}
+
+
+.input-group-append .input-group-text svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: #FFF9C7;
+  border-color: #FFF9C7;
+}
+
+.input-group-append {
+  display: flex;
+}
