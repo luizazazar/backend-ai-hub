@@ -61,6 +61,10 @@
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #694F00;
   --bs-btn-hover-border-color: #694F00;
+  padding-right: 0.1;
+  padding-left: 0.1;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-tertiary {
@@ -83,15 +87,15 @@
 }
 
 
-
 .row {
-  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-top: calc(-1* var(--bs-gutter-y));
-  margin-right: calc(-.5* var(--bs-gutter-x));
-  margin-left: calc(-.5* var(--bs-gutter-x));
+  padding-right: calc(0.75* var(--bs-gutter-x));
+  padding-left: calc(0.2* var(--bs-gutter-x));
 }
 
 .icon-square {
