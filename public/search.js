@@ -16,7 +16,7 @@ const options = {
     findAllMatches: true
 };
 
-// Initialize Fuse.js (create new object) Search library
+// Initialize Fuse.js (create new object, Fuse as a Search Library)
 const fuse = new Fuse(items, options);
 
 // Reference to the cards container (where the product cards will be displayed)
