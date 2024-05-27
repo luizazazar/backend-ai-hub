@@ -86,7 +86,6 @@
   color:#694F00;
 }
 
-
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -184,22 +183,4 @@
 
 .input-group-append {
   display: flex;
-}
-
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  .container {
-      grid-template-columns: 1fr 1fr; /* Two columns for tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-      grid-template-columns: 1fr; /* One column for phones */
-  }
-
-  .card {
-      max-width: 100%; /* Full width for phones */
-  }
 }
