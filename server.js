@@ -92,7 +92,7 @@ app.get('/transcribeproductpage', function(req, res) {
                data: { productName, productDescription, emailAddress, phoneNumber, isChecked },
             });
 
-            // Redirect back to the homepage
+            // Redirect user to the /submit page, or can choose to Redirect back to the homepage
             res.redirect('/submit');
       }
       } catch (error) {
