@@ -61,21 +61,8 @@
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #694F00;
   --bs-btn-hover-border-color: #694F00;
-  padding-right: 0.1;
-  padding-left: 0.1;
-  justify-content: center;
-  align-items: center;
 }
 
-.btn-tertiary {
-  background-color: #694F00;
-  border-color: #694F00;
-  font-weight: 500;
-  color: #fff;
-  --bs-btn-hover-color: #694F00;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #694F00;
-}
 
 .header-background {
   background-color: #FFF9C7;
@@ -86,16 +73,16 @@
   color:#694F00;
 }
 
+
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   margin-top: calc(-1* var(--bs-gutter-y));
-  padding-right: calc(0.2* var(--bs-gutter-x));
-  padding-left: calc(0.2* var(--bs-gutter-x));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
 }
 
 .icon-square {
@@ -115,13 +102,12 @@
 }
 
 .form-control {
-  max-width: 1500px;
-  text-align: center;
-  font-weight: bold;
+  max-width: 900px;
+  text-align: left;
   display: block;
   width: 100%;
-  padding: .475rem .75rem;
-  font-style: normal;
+  padding: .375rem .75rem;
+  font-style:italic;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -136,51 +122,7 @@
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.form-fields {
-  max-width: 1500px;
-  text-align: center;
-  font-weight: bold;
-  display: block;
-  width: 100%;
-  padding: .475rem .75rem;
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--bs-body-color);
-  background-color: #fff;
-  background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-width: 1px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
 .search-bar {
   margin-bottom: 30px;
-  border width: 50px;
 }
 
-.input-group .form-control {
-  border-right: 0;
-  border-left: 0;
-}
-.input-group-append .input-group-text {
-  background: #694F00;
-  border-right: 0;
-  border-left: 0;
-}
-
-
-.input-group-append .input-group-text svg {
-  width: 1.5em;
-  height: 1.5em;
-  fill: #FFF9C7;
-  border-color: #FFF9C7;
-}
-
-.input-group-append {
-  display: flex;
-}
