@@ -15,7 +15,7 @@ const items = [
 // higher threshold = return more results but may not be well-matched. lower threshold = more specific results/stricter matches. 
 const options = {
     keys: ['title', 'description', 'about'],
-    threshold: 0.3,
+    threshold: 0.4,
     findAllMatches: true
 };
 
