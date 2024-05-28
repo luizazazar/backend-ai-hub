@@ -67,6 +67,18 @@ app.get('/transcribeproductpage', function(req, res) {
    res.render('transcribeproductpage');
 });
 
+app.get('/appraiserproductpage', function(req, res) {
+   res.render('appraiserproductpage');
+});
+
+app.get('/aisayproductpage', function(req, res) {
+   res.render('aisayproductpage');
+});
+
+app.get('/searchsgproductpage', function(req, res) {
+   res.render('searchsgproductpage');
+});
+
 // Submit page (thank you for submission)
  app.get('/submit', function(req, res) {
    res.render('submit');
