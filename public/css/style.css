@@ -110,6 +110,19 @@
   color: #694F00 !important;
 }
 
+.text-primary-emphasis {
+  color: black!important;
+}
+
+.text-success-emphasis {
+  color: black !important;
+}
+
+.eventTitle {
+  color: #694F00 !important;
+}
+
+
 .form-control {
   max-width: 1500px;
   text-align: center;
