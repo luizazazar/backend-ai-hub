@@ -67,12 +67,12 @@ app.get('/transcribeproductpage', function(req, res) {
    res.render('transcribeproductpage');
 });
 
-app.get('/appraiserproductpage', function(req, res) {
-   res.render('appraiserproductpage');
-});
-
 app.get('/aisayproductpage', function(req, res) {
    res.render('aisayproductpage');
+});
+
+app.get('/appraiserproductpage', function(req, res) {
+   res.render('appraiserproductpage');
 });
 
 app.get('/searchsgproductpage', function(req, res) {
